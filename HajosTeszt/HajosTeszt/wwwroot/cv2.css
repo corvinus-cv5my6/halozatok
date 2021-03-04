@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html >
+<html >
+<head >
+<meta charset="utf-8" / >
+<title > </title >
+</head >
+<body >
+
+</body >
+</html >
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: bold;
+    text-align: center;
+}
+
+#szövegek,
+#listak,
+#kep,
+#header,
+#oldal {
+    padding: 20px;
+}
+
+#header {
+    background-color: tomato;
+}
+
+#listak {
+    background: white;
+    color: tomato;
+    text-align: left;
+}
+
+#szövegek {
+    text-align: center;
+    background-color: white;
+    color: tomato;
+}
+
+
+#oldal {
+    background-color: tomato;
+}
+
+#kep {
+    background: tomato;
+}
+
+
+
+
+
+@media screen and (min-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        max-width: 1500px;
+        margin: auto;
+    }
+
+    #tarto {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #header {
+        order: -1;
+    }
+
+    #szövegek {
+        flex: 1 1 75%;
+    }
+
+    #listak {
+        flex: 1 1 25%;
+    }
+}
+
+.resize {
+    width: 400px;
+    height: auto;
+    float: center;
+    border: solid 3px tomato;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+
+
+a:hover {
+    background-color: white;
+}
+
+span {
+    color: tomato;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.csapatok {
+    color: white;
+    background-color: tomato;
+    border-radius: 30px;
+}
+
+.jatekosok {
+    color: white;
+    background-color: tomato;
+    border-radius: 30px;
+}
