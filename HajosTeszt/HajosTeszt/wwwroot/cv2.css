@@ -8,7 +8,7 @@
 
 </body >
 </html >
-* {
+ * {
     box-sizing: border-box;
 }
 
@@ -21,7 +21,8 @@ body {
 #listak,
 #kep,
 #header,
-#oldal {
+#oldal,
+#nav {
     padding: 20px;
 }
 
@@ -30,20 +31,20 @@ body {
 }
 
 #listak {
-    background: white;
-    color: tomato;
+    background: lightskyblue;
+    color: black;
     text-align: left;
 }
 
 #szövegek {
     text-align: center;
-    background-color: white;
-    color: tomato;
+    background-color: orange;
+    color: black;
 }
 
 
 #oldal {
-    background-color: tomato;
+    background-color: lightcoral;
 }
 
 #kep {
@@ -67,6 +68,7 @@ body {
         flex-wrap: wrap;
     }
 
+    #nav,
     #header {
         order: -1;
     }
@@ -105,13 +107,24 @@ span {
 }
 
 .csapatok {
-    color: white;
-    background-color: tomato;
+    color: black;
+    background-color: lightsalmon;
     border-radius: 30px;
 }
 
 .jatekosok {
-    color: white;
-    background-color: tomato;
+    color: black;
+    background-color: lightsalmon;
     border-radius: 30px;
 }
+
+#nav {
+    background: deepskyblue;
+    display: flex;
+}
+
+    #nav a {
+        flex: 1 1 auto;
+        text-decoration: none;
+        color: black;
+    }
