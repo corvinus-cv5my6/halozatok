@@ -16,6 +16,13 @@
             szám.style.color = `rgb(${255 - (25 * s)},0,${255 - (25 * o)})`
         }
     }
+    var faktoriálisR = function (n) {
+        if (n === 0 || n === 1) {
+            return 1;
+        } else {
+            return n * faktoriálisR(n - 1)
+        }
+    } 
 
     let pascal = document.getElementById("pascal")
     pascal.innerHTML = ""
@@ -36,10 +43,3 @@
     }
 }
 
-var faktoriálisR = function (n) {
-    if (n === 0 || n === 1) {
-        return 1;
-    } else {
-        return n * faktoriálisR(n - 1)
-    }
-} 
