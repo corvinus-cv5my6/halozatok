@@ -3,8 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    
-    <script src="hetedik.js"></script>
+    <script src="tizedik.js"></script>
+    <link rel="stylesheet" href="hajo.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
     <div id="külső">
@@ -12,116 +15,22 @@
             Kérdés szövege
         </div>
         <style>
-            .kattintható {
-                cursor: pointer;
-            }
-            .jó {
-                background-color: green;
-            }
-
-            .rossz {
-                background-color: red;
-            }
-
-            .kattintható:hover {
-                background-color: purple;
-                color: white;
-                cursor: pointer;
-            }
-
-
-
-            #külső {
-                height: 100%;
-                flex-direction: column;
-                display: flex;
-                text-align: left;
-                font-size: larger;
-                font-weight: bold;
-                border: black 5px solid;
-                font-style: italic;
-                background-color: fuchsia;
-            }
-
-            html, body {
-                height: 100%;
-            }
-
-
-
-            #középső {
-                display: flex;
-                flex-direction: row;
-                flex-grow: 1;
-            }
-
-            #válaszok {
-                flex-grow: 1;
-                flex-shrink: 1;
-                text-align: center;
-                font-weight: lighter;
-                font-size: xx-large;
-                font-style: normal;
-                margin-top: 125px;
-            }
-
-            #válasz1 {
-                border: black 1px solid;
-                margin: 40px;
-            }
-
-            #válasz2 {
-                border: black 1px solid;
-                margin: 40px;
-            }
-
-            #válasz3 {
-                border: black 1px solid;
-                margin: 40px;
-            }
-
-            
-            #vezérlő {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-
-            #kép {
-                overflow: hidden;
-                flex-shrink: 0;
-                flex-shrink: 0;
-                border: black solid 1px;
-                background-color: purple;
-                max-width: 500px;
-                max-height: 500px;
-            }
-
-            #kép1 {
-                margin: 50px;
-                margin-top: 180px;
-            }
-
-            .gomb {
-                padding: 20px;
-                width: 80px;
-                border: black 1px solid;
-            }
+           
         </style>
 
         <div id="középső">
             <div id="válaszok">
-                <div id="válasz1" class="kérdés kattintható" onclick="válaszSzínezés1()">Válasz 1</div>
-                <div id="válasz2" class="kérdés kattintható" onclick="válaszSzínezés2()">Válasz 2</div>
-                <div id="válasz3" class="kérdés kattintható" onclick="válaszSzínezés3()">Válasz 3</div>
+                <div id="válasz1" class="kérdés kattintható" onclick="válaszSzínezés(1)">Válasz 1</div>
+                <div id="válasz2" class="kérdés kattintható" onclick="válaszSzínezés(2)">Válasz 2</div>
+                <div id="válasz3" class="kérdés kattintható" onclick="válaszSzínezés(3)">Válasz 3</div>
             </div>
             <div id="kép">
                 <img id="kép1" src="https://szoft1.comeback.hu/hajo/teszt-0050.jpg" />
             </div>
         </div>
         <div id="vezérlő">
-            <div class="gomb kattintható" onclick="vissza()">Vissza</div>
-            <div class="gomb kattintható" onclick="előre()">Előre</div>
+            <div id="visszagomb" class="gomb kattintható" onclick="vissza()">Vissza</div>
+            <div id="előregomb" class="gomb kattintható" onclick="előre()">Előre</div>
         </div>
     </div>
 
